@@ -1,0 +1,3 @@
+# On mac, run
+#    brew install homebrew/binary/libspotify
+pyspotify
