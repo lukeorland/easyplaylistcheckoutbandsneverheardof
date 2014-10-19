@@ -1,5 +1,5 @@
 import fileinput
-from pyspotify import get_session
+import spotify
 
 PLAYLIST_NAME = 'check out'
 
@@ -24,6 +24,6 @@ def process(session, artist):
 
 
 if __name__ == __main__:
-    session = get_session()
+    session = spotify.Session()
     for line in fileinput.input():
         process(session, line)
